@@ -1,0 +1,80 @@
+header {
+    background: linear-gradient(to right, #00093c, #8c2502);
+    position: fixed;
+}
+
+.contact-container{
+    margin: 100px auto 20px auto;
+    /* border: 2px solid black; */
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.heading{
+    /* background-color: rgb(5, 177, 239); */
+    background-color: #f56f09;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+.heading h1{
+    font-size: 3rem;
+    color: #fff;
+    text-shadow:1px 1px 2px black ;
+}
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map iframe{
+    width: 90vw;
+    height: 70vh;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+.foot{
+    background-color: #f56f09;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+.foot div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.foot p, .foot i{
+    font-size: 1.25rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin: 0 5px;
+}
+.foot i{
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media screen and (max-width:420px){
+    .foot p, .foot i{
+        font-size: 0.75rem;
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        margin: 0 5px;
+    }
+}

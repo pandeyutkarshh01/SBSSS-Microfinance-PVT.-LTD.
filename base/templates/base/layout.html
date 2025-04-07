@@ -1,0 +1,143 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   {% if title %}
+   <title>SBSSS - {{ title }} </title>
+   {% else %}
+   <title>SBSSS Microfinance PVT. ltd </title>
+   {% endif %}
+
+
+
+   <!-- Remix Icons  -->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+   {% block CSS %}{% endblock CSS %}
+   <link rel="icon" type="image/x-icon" href="{% static  'Images/favicon.ico' %}">
+   <link rel="stylesheet" href="{% static  'CSS/layout.css' %}">
+
+</head>
+
+<body>
+   <!-- header -->
+   <!--=============== HEADER ===============-->
+   <header class="header">
+      <nav class="nav container">
+         <div class="nav__data">
+            <a href="{% url 'base-home' %}" class="nav__logo">
+               <i class="ri-planet-line"></i> SBSSS Microfinance
+            </a>
+
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line nav__burger"></i>
+               <i class="ri-close-line nav__close"></i>
+            </div>
+         </div>
+
+         <!--=============== NAV MENU ===============-->
+         <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+               <li><a href="{% url 'base-home' %}" class="nav__link">Home</a></li>
+
+               <li><a href="{% url 'base-about' %}" class="nav__link">About Us</a></li>
+
+               <li><a href="{% url 'base-contact' %}" class="nav__link">Contact</a></li>
+
+
+               <!--=============== DROPDOWN 2 ===============-->
+                <!-- <li class="dropdown__item">
+                  <div class="nav__link">
+                     Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                  </div>
+
+                  <ul class="dropdown__menu">
+                     <li>
+                        <a href="#" class="dropdown__link">
+                           <i class="ri-user-line"></i> Profiles
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="dropdown__link">
+                           <i class="ri-lock-line"></i> Accounts
+                        </a>
+                     </li>
+
+                     <li>
+                        <a href="#" class="dropdown__link">
+                           <i class="ri-message-3-line"></i> Messages
+                        </a>
+                     </li>
+                  </ul>
+               </li>  -->
+
+            </ul>
+         </div>
+      </nav>
+   </header>
+
+
+   <div class="body-container">
+      {% block content %}{% endblock content %}
+   </div>
+
+
+   <footer>
+      <div class="row">
+         <div class="col">
+            <img class='logo' src="{% static 'Images/logo.png' %}">
+             <!-- <p class='logo-txt'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi amet et perferendis, eligendi vitae
+               minima quasi nostrum deserunt officiis, laborum neque magnam consectetur? Sunt, ad?</p> \ -->
+         </div>
+         <div class="col">
+            <h3>Office
+               <div class="underline"><span></span></div>
+            </h3>
+            <p>Chak Bharikara, Banahara</p>
+            <p>Sikandarpur, UttarPradesh</p>
+            <p>Balia, Pin 233001, India</p>
+            <p class="email-id">demosbsss@gmail.com</p>
+            <h4>+91 7408497603, 9616667801, 9598508562</h4>
+         </div>
+         <div class="col">
+            <h3>Links
+               <div class="underline"><span></span></div>
+            </h3>
+            <ul>
+               <li><a href="{% url 'base-home' %}">Home</a></li>
+                <!-- <li><a href="{% url "base-home" %}">Services</a></li>  -->
+               <li><a href="{% url 'base-about' %}">About Us</a></li>
+               <!--  <li><a href="{% url "base-home" %}">Gallery</a></li>  -->
+               <li><a href="{% url 'base-contact' %}">Contacts</a></li>
+            </ul>
+         </div>
+         <div class="col">
+            <h3>Newsletter
+               <div class="underline"><span></span></div>
+            </h3>
+            <form>
+               <i class="ri-mail-send-line far"></i>
+               <input type="email" placeholder="Enter your email" required>
+               <button type="submit"><i class="ri-arrow-right-line fas"></i></button>
+            </form>
+            <div class="social-icons">
+               <a href="https://www.facebook.com"><i class="ri-facebook-fill fab"></i></a>
+               <a href="https://www.twitter.com"><i class="ri-twitter-x-line fab"></i></a>
+               <a href="https://www.instagram.com"><i class="ri-instagram-line fab"></i></a>
+               <!-- <a href="https://www.pinterest.com"><i class="ri-pinterest-line fab"></i></a> -->
+            </div>
+         </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright SBSSS pvt. ltd. © 2025 All Rights Reserved</p>
+   </footer>
+
+
+   <script src="{% static 'JS/layout.js' %}"></script>
+   {% block JS %}{% endblock JS %}
+</body>
+
+</html>

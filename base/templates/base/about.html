@@ -1,0 +1,83 @@
+{% extends "base/layout.html" %}
+{% load static %}
+{% block CSS %}<link rel="stylesheet" href="{% static  'CSS/about.css' %}">{% endblock CSS %}
+{% block content %}
+
+
+<section class="overview">
+    <h2>Who We Are</h2>
+    <p>At <strong>Sharda Bhudhram Shree Sai Seva </strong>, we provide accessible financial solutions to underserved communities, helping individuals and small businesses thrive. Sharda Bhudhram Sai Seva Microfinance is committed to empowering underserved communities by providing accessible financial services. We offer microloans, training, and support to help individuals and small businesses thrive. Our goal is to foster financial inclusion, promote sustainable growth, and create opportunities for a brighter, more prosperous future.</p>
+</section>
+
+<section class="mission">
+    <h2>Our Mission &amp; Vision</h2>
+    <p><strong>Mission:</strong> At Sharda Budhram Shree Sai Seva, our mission is to empower individuals and small businesses by providing accessible and sustainable financial solutions. We are committed to fostering economic growth and financial inclusion by offering microloans, savings opportunities, and financial literacy programs tailored to underserved communities. Through ethical banking practices and customer-centric services, we strive to uplift lives, enhance self-sufficiency, and contribute to the socio-economic development of our society. Our goal is to create lasting positive impacts, ensuring that every individual has the resources and knowledge to build a secure and prosperous future.</p><br>
+    <p><strong>Vision:</strong> Our vision is to be a leading microfinance institution dedicated to transforming lives through financial empowerment. We aspire to create a world where financial barriers no longer hinder dreams, where small entrepreneurs thrive, and where communities prosper through responsible and inclusive financial services. By leveraging innovation, integrity, and social responsibility, Sharda Budhram Shree Sai Seva aims to become a trusted partner in economic upliftment, fostering a culture of self-reliance and growth. Our long-term vision is to expand our reach, bridging the financial gap for millions, and setting new standards in microfinance excellence while upholding the values of service, trust, and community development.
+
+
+
+
+
+
+
+    </p>
+</section>
+
+<section class="values">
+    <h2>Our Values</h2>
+    <ul>
+        <li><strong>Integrity:</strong> At Sharda Budhram Shree Sai Seva, integrity is the foundation of our operations. We uphold transparency, honesty, and ethical practices in all our financial services. By fostering trust and accountability, we ensure that every client receives fair treatment, reinforcing our commitment to responsible and sustainable microfinance solutions.</li><br>
+
+        <li><strong>Empowerment:</strong> We believe in empowering individuals and small businesses by providing them with financial resources, knowledge, and opportunities. Through accessible microloans and financial literacy programs, we enable people to achieve economic independence, build sustainable livelihoods, and create a brighter future for themselves and their families. Financial empowerment fuels long-term growth and self-sufficiency.</li><br>
+
+        <li><strong>Community:</strong> Our success is deeply connected to the well-being of the communities we serve. We actively support economic development by fostering entrepreneurship and social progress. Through inclusive financial services and community-driven initiatives, we aim to uplift lives, strengthen local economies, and create a supportive ecosystem where everyone has the opportunity to thrive.</li><br>
+    </ul>
+</section>
+
+<section class="journey">
+    <h2>Our Journey</h2>
+    <p>Founded in <strong>2024</strong>, we have grown from a small lending firm to a trusted financial institution, impacting thousands of clients through loans, education, and financial guidance.</p>
+    <ul>
+        <li><strong>2024</strong> - Launched with a focus on microloans for small businesses.</li>
+        <li><strong>2024</strong> - Expanded services to include financial literacy programs.</li>
+        <li><strong>2024</strong> - Celebrated 10,000 successful loan disbursements.</li>
+    </ul>
+</section> 
+
+
+<section class="team">
+    <h2>Meet Our Head Team</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="{% static 'Images/Employee/md.jpeg' %}" alt="CEO">
+            <h3>Mr. Krishnakant Kumar</h3>
+            <p>MD &amp; Founder</p>
+        </div>
+        <div class="team-member">
+            <img src="{% static 'Images/Employee/emp1.jpeg' %}" alt="CFO">
+            <h3>Ravi Kumar Prajapti</h3>
+            <p>M.D &amp; IT Support</p>
+        </div>
+    </div>
+</section>
+
+<!-- <section class="impact">
+    <h2>Our Impact</h2>
+    <p>We are proud to have positively impacted thousands of lives:</p>
+    <ul>
+        <li><strong>10,000+</strong> entrepreneurs supported in starting or growing businesses.</li>
+        <li><strong>5,000+</strong> students funded to achieve their educational dreams.</li>
+        <li><strong>Countless families</strong> aided in meeting urgent financial needs.</li>
+    </ul>
+</section>  -->
+
+<section class="cta">
+    <h2>Get in Touch</h2>
+    <p>Interested in our services or partnership opportunities? <a href="{% url 'base-contact' %}">Contact us today!</a></p>
+</section>
+
+{% block JS %}
+    <script src="static 'JS/about.js"></script>
+{% endblock %}
+{% endblock content %}
+

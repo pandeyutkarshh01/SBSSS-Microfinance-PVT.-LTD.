@@ -1,0 +1,329 @@
+{% extends "base/layout.html" %}
+{% load static %}
+
+
+
+{% block CSS %}
+<link rel="stylesheet" href="{% static  'CSS/home.css' %}">
+{% endblock CSS %}
+
+
+{% block content %}
+<!-- carousel -->
+<div class="carousel">
+    <!-- list item -->
+    <div class="list">
+        <div class="item">
+            <img src="{% static 'Images/img2.jpeg'%}">
+            <div class="content">
+                <div class="author">Welcome to</div>
+                <div class="title">Sharda Budhram Shree Sai SEVA PVT. LTD.</div>
+                <div class="topic">MICROFINANCE</div>
+                <div class="des">
+                    We are here to support your financial journey with accessible microloans and resources designed to
+                    help you thrive. Our commitment is to empower underserved communities, fostering growth and
+                    independence. Join us in creating opportunities and building a brighter, more sustainable future for
+                    all.
+                </div>
+                <div class="buttons">
+                    <a href="{% url 'base-about' %}">SEE MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'Images/img3.jpeg'%}">
+            <div class="content">
+                <div class="author">About Us</div>
+                <div class="title">Sharda Budhram Shree Sai SEVA PVT. LTD.</div>
+                <div class="topic">MICROFINANCE</div>
+                <div class="des">
+                    Sharda Bhudhram Sai Seva Microfinance is committed to empowering underserved communities by
+                    providing accessible financial services. We offer microloans, training, and support to help
+                    individuals and small businesses thrive. Our goal is to foster financial inclusion, promote
+                    sustainable growth, and create opportunities for a brighter, more prosperous future.
+                </div>
+                <div class="buttons">
+                    <a href="{% url 'base-about' %}">SEE MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'Images/img1.jpg'%}">
+            <div class="content">
+                <div class="author">Our Vision</div>
+                <div class="title">Sharda Budhram Shree Sai SEVA PVT. LTD.</div>
+                <div class="topic">MICROFINANCE</div>
+                <div class="des">
+                    Our vision is to become a leading microfinance institution that transforms lives through financial
+                    empowerment. We aim to create a world where every individual, regardless of their background, has
+                    access to the tools and resources needed to build a prosperous future, fostering inclusive growth
+                    and social equity.
+                </div>
+                <div class="buttons">
+                    <a href="{% url 'base-about' %}">SEE MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'Images/img4.jpg'%}">
+            <div class="content">
+                <div class="author">Our Mission</div>
+                <div class="title">Sharda Budhram Shree Sai SEVA PVT. LTD.</div>
+                <div class="topic">MICROFINANCE</div>
+                <div class="des">
+                    At Sharda Bhudhram Sai Seva Microfinance, our mission is to empower individuals and communities by
+                    providing accessible and affordable financial services. We strive to promote financial inclusion,
+                    enhance entrepreneurship, and support sustainable growth, helping underserved populations achieve
+                    financial independence and improve their quality of life.
+                </div>
+                <div class="buttons">
+                    <a href="{% url 'base-about' %}">SEE MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- list thumnail -->
+    <div class="thumbnail">
+        <div class="item">
+            <img src="{% static 'Images/img2.jpeg'%}">
+            <div class="content">
+                <div class="title">
+                    Welcome to
+                </div>
+                <div class="description">
+                    SBSSS
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'Images/img3.jpeg'%}">
+            <div class="content">
+                <div class="title">
+                    About Us
+                </div>
+                <div class="description">
+                    SBSSS
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'Images/img1.jpg'%}">
+            <div class="content">
+                <div class="title">
+                    Our Vission
+                </div>
+                <div class="description">
+                    SBSSS
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="{% static 'Images/img4.jpg'%}">
+            <div class="content">
+                <div class="title">
+                    Our Mission
+                </div>
+                <div class="description">
+                    SBSSS
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- next prev -->
+
+    <div class="arrows">
+        <button id="prev">&lt;</button>
+        <button id="next">&gt;</button>
+    </div>
+    <!-- time running -->
+    <div class="time"></div>
+</div>
+
+
+
+<!-- Pages of About Mission Vision -->
+<div>
+    <div class="heading">
+        <h1 class='scroll-clip'>Our Vision</h1>
+    </div>
+    <div class="about-container">
+        <section class="about">
+            <div class="about-image scroll-clip">
+                <img src="{% static 'Images/vision.jpg' %}" alt="">
+            </div>
+            <div class="about-content">
+                <h2>Sharda Budhram Shree Sai Seva Micro Finance PVT. LTD.</h2>
+                <p>Our vision is to empower underserved communities by providing accessible and affordable microfinance
+                    solutions that foster entrepreneurship and economic growth. We aim to create financial inclusion by
+                    offering small loans, savings programs, and financial education to individuals and small businesses.
+                    By
+                    leveraging technology and partnerships, we strive to make banking services more efficient and widely
+                    available. Our goal is to uplift people from poverty by enabling sustainable livelihoods and
+                    self-reliance. Through ethical practices and innovation, we envision a future where financial
+                    barriers
+                    no longer limit potential.</p>
+                <a class="read-more" href="{% url 'base-about' %}">Read More</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="heading">
+        <h1>Our Mission</h1>
+        <!-- <p>SB Shree Sai Seva Micro Finance PVT. LTD. -->
+        </p>
+    </div>
+    <div class="about-container">
+        <section class="about">
+            <div class="about-image">
+                <img src="{% static 'Images/mission.jpeg' %}" alt="">
+            </div>
+            <div class="about-content">
+                <h2>Sharda Budhram Shree Sai Seva Micro Finance PVT. LTD.</h2>
+                <p>Our mission is to provide affordable and accessible microfinance services to empower small businesses
+                    and
+                    low-income families in local communities across India. We aim to support financial inclusion by
+                    offering
+                    small loans, savings opportunities, and financial literacy programs tailored to local needs. By
+                    fostering entrepreneurship, we help individuals create sustainable livelihoods and improve their
+                    quality
+                    of life. We strive to build trust and long-term relationships with borrowers, ensuring responsible
+                    lending and financial growth. Through innovation and community engagement, we work towards a
+                    self-reliant and economically strong local society.</p>
+                <a class="read-more" href="{% url 'base-about' %}">Read More</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="heading">
+        <h1>About Us</h1>
+    </div>
+    <div class="about-container">
+        <section class="about">
+            <div class="about-image">
+                <img src="{% static 'Images/About.png' %}" alt="">
+            </div>
+            <div class="about-content">
+                <h2>Sharda Budhram Shree Sai Seva Micro Finance PVT. LTD.</h2>
+                <p>At Sharda Budhram Shree Sai Seva Micro Finance PVT. LTD., we are committed to empowering individuals
+                    and
+                    communities
+                    by providing accessible financial solutions. As a trusted microfinance institution, our mission is
+                    to
+                    offer small-scale loans, savings options, and financial guidance to underserved populations. We
+                    believe
+                    that financial inclusion is essential for fostering economic growth and improving livelihoods. By
+                    supporting entrepreneurs, small businesses, and low-income families, we aim to transform dreams into
+                    reality. Our dedication to innovation, transparency, and social impact drives us to create lasting
+                    positive change in the communities we serve.</p>
+                <a class="read-more" href="{% url 'base-about' %}">Read More</a>
+            </div>
+        </section>
+    </div>
+
+
+</div>
+
+
+
+<!-- Managing Director Section  -->
+<div class="md-body">
+    <!-- <div class="card-head">
+        <h1 class="card-heading">Meet Our Managing Director</h1>
+    </div>  -->
+    <div class="md-content">
+        <div class="md-section">
+            <img src="{% static 'Images/Employee/md.jpeg' %}" alt="Managing Director">
+            <h2>Mr. Krishnakant Kumar <br><small><i>(M.D) (B.M)</i></small></h2>
+        </div>
+        <div class="md-section">
+            <img src="{% static 'Images/Employee/emp2.jpeg' %}" alt="Managing Director">
+            <h2>Mr. Sanket Mishra <br><small><i>(A.M)</i></small> </h2>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Card Section -->
+<div class="scrolling-card">
+    <div class="card-head">
+        <h1 class="card-heading">Our Dedicated Staff</h1>
+    </div>
+    <div class="body">
+
+        <div class="wrapper">
+            <i id="left" class="ri-arrow-left-s-line"></i>
+            <ul class="card-box">
+
+                <li class="card">
+                    <div class="img">
+                        <img src="{% static 'Images/Employee/emp1.jpeg' %}" alt="Employee1 Image" draggable="false">
+                    </div>
+                    <h2>Ravi Kumar Prajapati</h2>
+                    <span>M.D &amp; IT Support</span>
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <img src="{% static 'Images/Employee/emp3.jpeg' %}" alt="Employee1 Image" draggable="false">
+                    </div>
+                    <h2>Sandeep Kumar</h2>
+                    <!-- <span>Field Officer</span>  -->
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <img src="{% static 'Images/Employee/emp4.jpeg' %}" alt="Employee1 Image" draggable="false">
+                    </div>
+                    <h2>Pradeep Kumar Chauhan</h2>
+                    <!-- <span>Field Officer</span>  -->
+                </li>
+                <li class="card">
+                    <div class="img">
+                        <img src="{% static 'Images/Employee/emp5.jpeg' %}" alt="Employee1 Image" draggable="false">
+                    </div>
+                    <h2>Suraj Prajapati</h2>
+                    <!-- <span>Field Officer</span>  -->
+                </li>
+
+
+
+            </ul>
+            <i id="right" class="ri-arrow-right-s-line"></i>
+
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Numbers Counting -->
+<!-- <div class="counters">
+    <div class="counter-box">
+        <div class="counter">
+            <h1><span data-count="15">0</span>+</h1>
+            <h3>Projects Completed</h3>
+        </div>
+        <div class="counter">
+            <h1><span data-count="300">0</span>+</h1>
+            <h3>Happy Clients</h3>
+        </div>
+        <div class="counter">
+            <h1><span data-count="91"></span>%</h1>
+            <h3>Success Rate</h3>
+        </div>
+        <div class="counter">
+            <h1><span data-count="10">0</span>+</h1>
+            <h3>Completed Mission</h3>
+        </div>
+    </div>
+</div>  -->
+
+
+
+
+{% block JS %}
+<script src="{% static 'JS/home.js' %}" defer></script>
+{% endblock JS %}
+
+
+
+{% endblock content %}

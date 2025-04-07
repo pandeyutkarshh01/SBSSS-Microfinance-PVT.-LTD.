@@ -1,0 +1,30 @@
+{% extends "base/layout.html" %}
+{% load static %}
+{% block CSS %}<link rel="stylesheet" href="{% static  'CSS/contact.css' %}">{% endblock CSS %}
+{% block content %}
+
+
+
+    <div class="contact-container">
+        <div class="heading">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58182.40372094238!2d83.52999581742672!3d25.574608632039126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3991ff78350bdfbf%3A0xc4a72451c0503586!2sGhazipur%2C%20Uttar%20Pradesh%20233001!5e1!3m2!1sen!2sin!4v1743304903635!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+
+    <div class="foot">
+        <p>For any Help/Enquiry :</p>
+        <div><i class="ri-phone-fill"></i><p>7408497603</p></div>
+        <div><i class="ri-phone-fill"></i><p>9616667801</p></div>
+        <div><i class="ri-phone-fill"></i><p>9598508562</p></div>
+        <div><i class="ri-mail-line"></i><p>demosbsss@gmail.com</p></div>
+
+    </div>
+
+{% block JS %}
+    <script src="{% static 'JS.contact.js' %}"></script>
+{% endblock JS %}
+{% endblock content %}
